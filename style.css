@@ -1,0 +1,110 @@
+ :root {
+  --blush-1: #6D4C41;
+  --blush-2: #8D6E63;
+  --blush-3: #D7CCC8;
+  --blush-4: #EFEBE9;
+  --blush-5: #FFAB91;
+  --blush-6: #A1887F;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--blush-4);
+  color: var(--blush-2);
+}
+
+header {
+  background-color: var(--blush-1);
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+input[type="text"] {
+  margin-top: 10px;
+  padding: 10px;
+  width: 60%;
+  border-radius: 5px;
+  border: none;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid var(--blush-3);
+  border-radius: 10px;
+  margin: 15px;
+  padding: 10px;
+  width: 250px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  cursor: pointer;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* MODAL */
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content img {
+  max-width: 90%;
+  max-height: 70vh; /* 🔁 Esto limita la altura de la imagen */
+  object-fit: contain;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+
+.modal-content img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.cerrar {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--blush-1);
+}
+#cargarMas {
+  display: block;
+  margin: 20px auto;
+  background-color: var(--blush-1);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#cargarMas.hidden {
+  display: none;
+}
+

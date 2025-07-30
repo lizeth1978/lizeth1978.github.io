@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Galería de Arte Antiguo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Galería de Arte Antiguo</h1>
+    <input type="text" id="busqueda" placeholder="Buscar obras de arte...">
+  </header>
+
+  <main id="galeria"></main>
+  <button id="cargarMas" class="hidden">Cargar más resultados</button>
+
+
+  <!-- MODAL -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="cerrar" class="cerrar">&times;</span>
+      <img id="modal-img" src="" alt="">
+      <div id="modal-info">
+        <h2 id="modal-title"></h2>
+        <p id="modal-artist"></p>
+        <p id="modal-date"></p>
+        <p id="modal-desc"></p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Galería Educativa</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+ 
